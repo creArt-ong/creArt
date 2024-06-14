@@ -9,7 +9,7 @@ html {
 }
 
 :root {
-    --color-beige: #eec886c2;
+    --color-naranja: ##f58426;
     --width-content: 1200px;
 }
 
@@ -20,21 +20,46 @@ html {
 
 /* ==============================HEADER========================= */
 
+
+/* Estilo general para el header */
 .header {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  gap: 30px;
 }
 
+/* Estilo para el logo */
 .header img {
-    width: 200px;
+  height: 100px; /* Ajusta la altura del logo según sea necesario */
 }
 
-.header ul {
-    display: flex;
-    list-style-type: none;
+/* Eliminar viñetas y márgenes por defecto */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Alinear los elementos en una fila */
+  gap: 10px;
 }
 
-ul li {
-    text-decoration: none;
+/* Estilo para los elementos de la lista */
+nav li {
+  margin-right: 20px; /* Espacio entre los elementos de la lista */
+}
+
+/* Estilo para los enlaces */
+nav a {
+  text-decoration: none; /* Eliminar subrayado de los enlaces */
+  color: #000; /* Color del texto */
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Estilo al pasar el ratón sobre los enlaces */
+nav a:hover {
+  text-decoration: underline; /* Subrayado al pasar el ratón */
+  color: #f58426; /* Cambiar color al pasar el ratón */
 }
