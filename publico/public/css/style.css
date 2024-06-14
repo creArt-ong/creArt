@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-beige: #eec886c2;
+    --width-content: 1200px;
+}
+
+.width-content {
+    max-width: var(--width-content);
+    margin: 0 auto;
+}
+
+/* ==============================HEADER========================= */
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header img {
+    width: 200px;
+}
+
+.header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+ul li {
+    text-decoration: none;
+}
