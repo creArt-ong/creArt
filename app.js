@@ -17,5 +17,5 @@ app.set('view engine', 'ejs')
 /** Iniciar el servidor */
 app.listen(port, () =>{
     console.log(`servidor en http://localhost:${port}`);
-    })
+})
     

@@ -10,7 +10,9 @@ router.get('/', (req, res) => {
 })
 
 
-
+router.get('/paises-actuacion', (req, res) =>{
+    res.render('paises-actuacion')
+})
 
 
 
