@@ -14,12 +14,17 @@ router.get('/paises-actuacion', (req, res) =>{
     res.render('paises-actuacion')
 })
 
-router.get('/paises-actuacion/palestina', (req, res) =>{
+router.get('/palestina', (req, res) =>{
     res.render('palestina')
 })
 
+router.get('/iran', (req, res) =>{
+    res.render('iran')
+})
 
-
+router.get('/afganistan', (req, res) =>{
+    res.render('afganistan')
+})
 
 
 /** Exportar router */
