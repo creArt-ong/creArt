@@ -26,6 +26,17 @@ router.get('/afganistan', (req, res) =>{
     res.render('afganistan')
 })
 
+router.get('/senegal', (req, res) =>{
+    res.render('senegal')
+})
+
+router.get('/tailandia', (req, res) =>{
+    res.render('tailandia')
+})
+
+router.get('/Mexico', (req, res) =>{
+    res.render('mexico')
+})
 
 /** Exportar router */
 export default router
