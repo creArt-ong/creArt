@@ -14,6 +14,9 @@ router.get('/paises-actuacion', (req, res) =>{
     res.render('paises-actuacion')
 })
 
+router.get('/paises-actuacion/palestina', (req, res) =>{
+    res.render('palestina')
+})
 
 
 
