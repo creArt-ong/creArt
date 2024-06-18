@@ -129,6 +129,21 @@ h2, blockquote{
   text-align: center;
   color: var(--color-naranja);
 }
+
+h3 {
+  color: var(--color-naranja);
+}
+
+a {
+  color: var(--color-naranja);
+}
+
+a:hover {
+  scale: 1.1;
+  font-weight: 700;
+  color: var(--color-amarillo);
+  
+}
 .videoIndex{
   height:60vh;
   width: 100%;
@@ -175,32 +190,42 @@ object-fit: cover;
 }
 
 
-/* =========================MAIN (PAISES-CARDS mapamundi)================== */
-img.width-content {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+/* =========================MAIN (CARDS mapamundi)================== */
+/* Estilo para la imagen del mapa */
+.img-mapa {
+  width: 80%; /* La imagen del mapa ocupará el 80% del ancho del contenedor */
+  max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+  height: auto; /* Para mantener la proporción */
+  display: block; /* Para quitar cualquier espacio adicional */
+  margin: 0 auto 20px; /* Centrar la imagen horizontalmente y añadir margen inferior */
 }
 
+
+
+/* Estilo para las tarjetas (si hay más contenido) */
+.card {
+  margin-bottom: 20px; /* Añade un margen inferior a las tarjetas */
+}
+
+/* Media queries para diferentes tamaños de pantalla */
 @media (max-width: 1024px) {
-  img.width-content {
-    max-width: 90%;
+  .img-mapa {
+    max-width: 80%; /* Reducir el tamaño máximo de la imagen en pantallas más pequeñas */
+    width: 800px;
   }
 }
 
 @media (max-width: 768px) {
-  img.width-content {
-    max-width: 80%;
+  .img-mapa {
+    max-width: 80%; /* Ajustar aún más el tamaño máximo en pantallas más pequeñas */
   }
 }
 
 @media (max-width: 480px) {
-  img.width-content {
-    max-width: 70%;
+  .img-mapa {
+    max-width: 70%; /* Reducir el tamaño máximo en pantallas móviles más pequeñas */
   }
 }
-
 
 /* =========================MAIN (PAISES-CARDS)================== */
 
@@ -219,6 +244,52 @@ img.width-content {
   overflow: hidden;
   width: 300px;
   transition: box-shadow 0.3s ease;
+}
+
+.card2 {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 500px; /* Ancho fijo inicial */
+  transition: box-shadow 0.3s ease;
+  margin: 0 auto; /* Centra la tarjeta horizontalmente */
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .card2 {
+    width: 80%; /* Reducir el ancho en pantallas más pequeñas */
+  }
+}
+
+/* Media query para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+  .card2 {
+    width: 90%; /* Reducir aún más el ancho en pantallas muy pequeñas */
+  }
+}
+
+.card2 img {
+  width: 250px; /* Ancho fijo de la imagen */
+  height: auto; /* Altura automática para mantener la proporción */
+  display: block; /* Asegura que la imagen sea un bloque para centrarla */
+  margin: 0 auto; /* Centra la imagen horizontalmente dentro de su contenedor */
+  border-radius: 5px; /* Añade bordes redondeados */
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .card2 img {
+    width: 200px; /* Reducir el ancho de la imagen en pantallas más pequeñas */
+  }
+}
+
+/* Media query para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+  .card2 img {
+    width: 150px; /* Reducir aún más el ancho de la imagen en pantallas muy pequeñas */
+  }
 }
 
 .card img {
@@ -247,6 +318,15 @@ img.width-content {
 }
 
 .card .btn:hover {
+  background-color: var(--color-naranja); /* Naranja */
+  color: #fff; /* Asegura que el texto siga siendo legible */
+}
+
+.card2:hover {
+  box-shadow: 0 8px 16px var(--color-naranja); /* Naranja */
+}
+
+.card2 .btn:hover {
   background-color: var(--color-naranja); /* Naranja */
   color: #fff; /* Asegura que el texto siga siendo legible */
 }
