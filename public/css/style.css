@@ -518,6 +518,33 @@ object-fit: cover;
     margin: 1em 0 1em 1em;
   }
 }
+/* ==============================REDES TEXTO ================== */
+.organizations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* Añade espacio entre las columnas */
+  max-width: 1200px; /* Limita el ancho máximo para mejor apariencia */
+  margin: 0 auto; /* Centra el contenedor */
+  text-align: center;
+  align-items: center;
+}
+
+.organizations .paragraph {
+  flex: 1 1 calc(50% - 10px); /* Dos columnas, con espacio entre ellas */
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #ddd; /* Añade un borde alrededor de cada elemento */
+  border-radius: 8px; /* Bordes redondeados */
+  background-color: #f9f9f9; /* Fondo ligero para resaltar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade sombra para profundidad */
+}
+
+@media (max-width: 768px) {
+  .organizations .paragraph {
+    flex: 1 1 100%; /* En pantallas más pequeñas, usa una sola columna */
+  }
+}
 
 /* ======================FOOTER==================== */
 
