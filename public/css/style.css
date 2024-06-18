@@ -130,27 +130,22 @@ h2, blockquote{
   color: var(--color-naranja);
 }
 
-h3 {
-  color: var(--color-naranja);
+.container-video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
 }
 
-a {
-  color: var(--color-naranja);
+video{
+  width: 60vw;
+  display: block;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px var(--color-naranja);
 }
 
-a:hover {
-  scale: 1.1;
-  font-weight: 700;
-  color: var(--color-amarillo);
-  
-}
-.videoIndex{
-  height:60vh;
-  width: 100%;
-
-}
-.custom{
-  background-color:var(--color-naranja);
+.quienes-somos{
+  margin:2rem auto;
 }
 
 .carousel-indicators button {
@@ -170,7 +165,6 @@ object-fit: cover;
 .carousel-caption a:hover {
   color:var(--color-amarillo);
 }
-
 /* =========================MAIN (Nuestros proyectos video youtube resposive)================== */
 
 .video-container {
