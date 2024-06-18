@@ -1,0 +1,85 @@
+<%- include('templates/header.ejs') %>
+<main class="width-content">
+    <div>
+        <h2>CREART</h2>
+        <blockquote>Por una educación creativa y transformadora</blockquote>
+        <p>Creart es una organización no gubernamental, laica, independiente y sin ánimo de lucro que 
+            trabaja para mejorar la calidad de la educación de los niños y niñas, y sus condiciones de 
+            vida, utilizando el arte como herramienta de transformación social.</p>
+    </div>
+    <div>
+        <video class="videoIndex" src="media/Asociación Creart.mp4" autoplay loop width="100%" muted></video>
+    </div>
+    <div class="cards-container">
+        <article class="card">
+            <img src="/img/index/nosotros.avif" alt="Imagen de niña pintando en iran">
+            <div class="card-content">
+              <h3>Nosotros</h3>
+              <p>Creart nace en 2006 con el fin de apoyar y dar voz a la población infantil más vulnerabilizada en el marco de los derechos humanos.</p>
+              <a href="/nosotros" class="btn">Leer más</a>
+            </div>
+          </article>
+      
+          <article class="card">
+              <img src="/img/index/principios.avif" alt="Niña palestina feliz mostrnado las manos con pinturas de colores">
+              <div class="card-content">
+                <h3>Principios</h3>
+                <p>El arte es un proceso humano de vital importancia para el desarrollo integral de la persona, es una herramienta que nos ayuda a comprender y cuestionar el mundo.</p>
+                <a href="/principios" class="btn">Leer más</a>
+              </div>
+            </article>
+        
+            <article class="card">
+              <img src="/img/index/equipo.avif" alt="Imagen de ejemplo">
+              <div class="card-content">
+                <h3>Equipo</h3>
+                <p>Creart somos un equipo de personas socias y colaboradoras movidas por el compromiso social y la voluntad de involucrarnos en procesos que nos hagan cuestionarnos el mundo en el que vivimos.</p>
+                <a href="/equipo" class="btn">Leer más</a>
+              </div>
+            </article> 
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner carousel-half-height">
+          <div class="carousel-item active">
+            <img src="img/index/gazaCarrete.avif" class="d-block w-100" alt="taller en Cisjordania">
+            <div class="carousel-caption d-none d-md-block">
+              <a href="/palestina"><h5>Palestina</h5></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/index/iranCarrete.avif" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5><a href="/iran">Iran</a></h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/index/palestinaCarrete.avif" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5><a href="/afganistan">Afganistan</a></h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/index/mexicoCarrete.avif" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5><a href="/senegal">Senegal</a></h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev custom" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon custom" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next custom" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon custom" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</main>
+<%- include('templates/footer.ejs') %>

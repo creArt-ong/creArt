@@ -26,6 +26,16 @@ html {
     margin: 0 auto;
 }
 
+strong {
+  color: var(--color-amarillo);
+}
+
+.link-fuerte {
+  font-size: var(--font-size-medium);
+  color: var(--color-naranja);
+  font-weight: bolder;
+}
+
 /* ==============================HEADER========================= */
 
 
@@ -37,8 +47,11 @@ html {
   padding: 10px 20px;
   gap: 30px;
   margin-bottom: 50px;
+  position: sticky;
+  top: 0; /* Posición sticky desde la parte superior */
+  background-color: #ffffff; /* Fondo blanco para el header */
+  z-index: 1000; /* Z-index alto para asegurar que esté por encima de otros elementos */
 }
-
 /* Estilo para el logo */
 .header img {
   height: 130px; /* Ajusta la altura del logo según sea necesario */
@@ -66,7 +79,7 @@ nav a {
 /* Estilo al pasar el ratón sobre los enlaces */
 nav a:hover {
   text-decoration: underline !important; /* Subrayado al pasar el ratón */
-  color: #f58426 !important; /* Cambiar color al pasar el ratón */
+  color: var(--color-naranja) !important; /* Cambiar color al pasar el ratón */
 }
 
 nav li {
@@ -109,6 +122,7 @@ nav li:last-child {
       }
     }
 
+/* =========================MAIN (PAISES-CARDS Nuestros proyectos)================== */
 /* =========================MAIN (INDEX)================== */
 
 h2, blockquote{
@@ -140,6 +154,51 @@ object-fit: cover;
 
 .carousel-caption a:hover {
   color:var(--color-amarillo);
+}
+
+/* =========================MAIN (Nuestros proyectos video youtube resposive)================== */
+
+.video-container {
+  position: relative;
+  padding-bottom: 45%; /* Ajusta la proporción de aspecto según lo necesites */
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 10%; /* Ajusta la posición superior */
+  left: 10%; /* Ajusta la posición izquierda */
+  width: 80%; /* Reducción del 20% en el ancho */
+  height: 80%; /* Reducción del 20% en la altura */
+}
+
+
+/* =========================MAIN (PAISES-CARDS mapamundi)================== */
+img.width-content {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  img.width-content {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  img.width-content {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  img.width-content {
+    max-width: 70%;
+  }
 }
 
 
@@ -201,9 +260,40 @@ object-fit: cover;
   .header img {
     max-width: 300px;
     height: auto;
-    margin-bottom: 50px;
+    margin-bottom: 0; /* Remove bottom margin to align in row */
   }
-  
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Add space between image and nav */
+  }
+  .header .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .header .col-12 {
+    display: flex;
+    justify-content: center;
+  }
+  .header .col-md-4, .header .col-md-8 {
+    display: flex;
+    justify-content: center;
+    flex: 1; /* Allow flex items to grow */
+  }
+  .header nav ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .header nav ul li {
+    margin: 0 10px; /* Add some spacing between nav items */
+  }
 }
 
 @media (max-width: 480px) {
@@ -213,7 +303,139 @@ object-fit: cover;
   }
 
   .card-content p {
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-extra-small);
+  }
+
+  .header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .header .col-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Allow flex items to grow */
+  }
+
+  .header .col-md-4, .header .col-md-8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .header nav ul li {
+    margin: 0 10px; /* Add some spacing between nav items */
+  }
+
+  .header img {
+    max-width: 150px; /* Adjust size for small screens */
+    height: auto;
+  }
+}
+/* ==============================Main TEXTO PAISES ================== */
+
+.title-primary {
+  color: var(--color-naranja);
+  font-size: 2.5rem;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.title-secondary {
+  color: var(--color-naranja);
+  font-size: 2rem;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.title-tertiary {
+  color: var(--color-naranja);
+  font-size: 1.75rem;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.paragraph {
+  margin-bottom: 1em;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.list {
+  list-style-type: disc;
+  margin: 1em 0 1em 1.5em;
+  padding: 0;
+}
+
+.list-item {
+  margin-bottom: 0.5em;
+}
+
+@media (max-width: 768px) {
+  .width-content {
+    padding: 10px;
+  }
+
+  .title-primary {
+    font-size: 2rem;
+  }
+
+  .title-secondary {
+    font-size: 1.75rem;
+  }
+
+  .title-tertiary {
+    font-size: 1.5rem;
+  }
+
+  .paragraph, .list-item {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .width-content {
+    padding: 5px;
+  }
+
+  .title-primary {
+    font-size: 1.75rem;
+  }
+
+  .title-secondary {
+    font-size: 1.5rem;
+  }
+
+  .title-tertiary {
+    font-size: 1.25rem;
+  }
+
+  .paragraph, .list-item {
+    font-size: 0.9rem;
+  }
+
+  .list {
+    margin: 1em 0 1em 1em;
   }
 }
 
