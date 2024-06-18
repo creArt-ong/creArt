@@ -108,6 +108,41 @@ nav li:last-child {
         margin: 5px 0;
       }
     }
+
+/* =========================MAIN (INDEX)================== */
+
+h2, blockquote{
+  text-align: center;
+  color: var(--color-naranja);
+}
+.videoIndex{
+  height:60vh;
+  width: 100%;
+
+}
+.custom{
+  background-color:var(--color-naranja);
+}
+
+.carousel-indicators button {
+  background-color: var(--color-naranja)!important;
+}
+
+.carousel-half-height img {
+height: 50vh;
+object-fit: cover;
+}
+
+.carousel-caption a {
+  color: white;
+  text-decoration: none; 
+}
+
+.carousel-caption a:hover {
+  color:var(--color-amarillo);
+}
+
+
 /* =========================MAIN (PAISES-CARDS)================== */
 
 .cards-container {
@@ -166,40 +201,9 @@ nav li:last-child {
   .header img {
     max-width: 300px;
     height: auto;
-    margin-bottom: 0; /* Remove bottom margin to align in row */
+    margin-bottom: 50px;
   }
-  .header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between; /* Add space between image and nav */
-  }
-  .header .row {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .header .col-12 {
-    display: flex;
-    justify-content: center;
-  }
-  .header .col-md-4, .header .col-md-8 {
-    display: flex;
-    justify-content: center;
-    flex: 1; /* Allow flex items to grow */
-  }
-  .header nav ul {
-    padding-left: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-  .header nav ul li {
-    margin: 0 10px; /* Add some spacing between nav items */
-  }
+  
 }
 
 @media (max-width: 480px) {
@@ -209,53 +213,7 @@ nav li:last-child {
   }
 
   .card-content p {
-    font-size: var(--font-size-extra-small);
-  }
-
-  .header .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .header .row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .header .col-12 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1; /* Allow flex items to grow */
-  }
-
-  .header .col-md-4, .header .col-md-8 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .header nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-left: 0;
-    margin: 0;
-    list-style: none;
-  }
-
-  .header nav ul li {
-    margin: 0 10px; /* Add some spacing between nav items */
-  }
-
-  .header img {
-    max-width: 150px; /* Adjust size for small screens */
-    height: auto;
+    font-size: var(--font-size-small);
   }
 }
 
