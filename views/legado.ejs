@@ -1,0 +1,35 @@
+<%- include('templates/header.ejs') %>
+    <h2 style="margin-bottom: 50px; margin-top: 50px;" class="title-primary">Asociate</h2>
+<main class="cards-container width-content">
+<div class="width-content">
+    <div class="unete-texto">
+                <p class="texto-legado"> <strong>Tu compromiso con nuestra causa social se puede prolongar en el tiempo a través del legado solidario.</strong> <br>
+                   Existe la posibilidad de que nos incluyas a una o varias ONG en tu testamento, tú continuarás contribuyendo en nuestros proyectos y nosotros heredamos tu entusiasmo y tu solidaridad.</p>
+        </div>
+        <div class="contenedor-form">
+          <h2>Solicitud de Información</h2>
+          <form action="URL_DEL_SERVIDOR_AQUI" method="post">
+              <div class="form-group">
+                  <label for="name">Nombre:</label><br>
+                  <input type="text" id="name" name="name" class="input" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">Correo Electrónico:</label><br>
+                  <input type="email" id="email" name="email" class="input" required>
+              </div>
+              <div class="form-group">
+                  <label for="subject">Asunto:</label><br>
+                  <input type="text" id="subject" name="subject" class="input" required>
+              </div>
+              <div class="form-group">
+                  <label for="message">Mensaje:</label> <br>
+                  <textarea id="message" name="message" required class="input"></textarea>
+              </div>
+              <div class="form-group">
+                  <button type="submit" class="btn">Enviar</button>
+              </div>
+          </form>
+      </div>
+</div>
+</main>
+<%- include('templates/footer.ejs') %>

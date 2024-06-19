@@ -1,0 +1,53 @@
+<%- include('templates/header.ejs') %>
+    <h2 style="margin-bottom: 50px; margin-top: 50px;">Asociate</h2>
+<main class="cards-container width-content">
+<div class="contenedor-form width-content">
+    <div class="form-texto">
+        <p><strong>Puedes desgravar tus donaciones en la declaración del IRPF, según normativa vigente.</strong> Anualmente informamos a la Agencia Tributaria del importe de tus donaciones, para lo cual es necesario que nos facilites tu DNI o NIF y tu domicilio. Si necesitas el certificado de donaciones, te lo enviaremos cuando lo solicites escribiendonos a ramon.malvar@creart.org.es</p>
+        <p><strong>Puedes hacer tu donación haciendo una transferencia a:</strong> 
+
+            BBVA Pl. Antonio Maura, 6, 08003 Barcelona  IBAN ES82 0182 4609 9102 0085 2752
+            
+            <strong>También lo puedes hacer a través de este formulario:</strong></p>
+    </div>
+    <div class="form-asociate">
+
+    <form action="/submit" method="post">
+        <h3>Formulario de Inscripción</h3>
+        <label for="nombre" >Nombre y apellidos *</label><br>
+        <input type="text" id="nombre" name="nombre" required class="input"><br>
+
+        <label for="dni">DNI *</label><br>
+        <input type="text" id="dni" name="dni" class="input" required><br>
+
+        <label for="email" >Email *</label><br>
+        <input type="email" id="email" name="email" class="input" required><br>
+
+        <label for="telefono" >Teléfono *</label><br>
+        <input type="tel" id="telefono" name="telefono" class="input" required><br>
+
+        <label for="direccion">Dirección *</label><br>
+        <input type="text" id="direccion" name="direccion"  class="input"required><br>
+
+        <label for="pais">País *</label><br>
+        <input type="text" id="pais" name="pais" class="input" required><br>
+
+        <label for="cuota">Importe *</label><br>
+        <input type="number" id="cuota" name="cuota" value="10" class="input" required><br>
+
+        <label for="titular">Titular *</label><br>
+        <input type="text" id="titular" name="titular" class="input" required><br>
+
+        <label for="iban" class="input">IBAN (24 dígitos) *</label><br>
+        <input type="text" id="iban" name="iban" pattern="ES[0-9]{22}" placeholder="ESXXXXXXXXXXXXXXXXXXXXXX" class="input" required><br><br>
+
+        <label>
+            <input type="checkbox" name="politica" required> Acepto la política de protección de datos
+        </label>
+
+        <button type="submit" class="btn">Donar</button>
+    </form>
+</div>
+</div>
+</main>
+<%- include('templates/footer.ejs') %>
