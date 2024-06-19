@@ -1,0 +1,60 @@
+/* ======================FOOTER==================== */
+
+.footer {
+    background-color: var(--color-naranja);
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+    font-size: var(--font-size-small);
+    color: black;
+
+    div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .logo-footer {
+        width: 130px;
+        filter: drop-shadow(1px 1px 5px var(--color-amarillo))
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .redes-sociales {
+        display: flex;
+        justify-content: space-around;
+        width: 15%;
+        padding: 0;
+
+        img {
+            height: 35px;
+            width: 35px;
+            filter: drop-shadow(1px 1px 3px var(--color-amarillo));
+            background-color: var(--color-amarillo);
+            padding: 4px;
+            border-radius: 5px;
+        }
+    }
+
+    .decorador-footer {
+        font-size: var(--font-size-large);
+        color: var(--color-amarillo);
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: black;
+    }
+
+    a:hover {
+        scale: 1.1;
+        color: var(--color-amarillo);
+        text-decoration: underline;
+    }
+}
