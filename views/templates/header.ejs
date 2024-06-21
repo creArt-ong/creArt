@@ -16,9 +16,7 @@
   <title>CreArt</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="shortcut icon" href="logos/favicon.jpg" type="image/x-icon" />
-  <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" /> -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/galeria.css">
   <link rel="stylesheet" href="css/footer.css">
 
@@ -27,17 +25,56 @@
 <body>
   <header>
     <div class="header width-content">
-      <a href="/"><img src="img/logo_creart/logo creart_trasparente.png" alt="Logo de la creart" /></a>
+      <a href="/"><img src="img/logo_creart/logo creart_trasparente.png" alt="Logo"></a>
       <nav>
-        <ul>
-          <li><a href="/paises-actuacion">Países de actuación</a></li>
-          <li><a href="/nuestros-proyectos">Nuestros proyectos</a></li>
-          <li><a href="/noticias-eventos">Noticias y eventos</a></li>
-          <li><a href="/participa">Participa</a></li>
-          <li><a href="/galeria">Galería</a></li>
-          <li><a href="/contacto">Contacto</a></li>
-        </ul>
+          <ul>
+              <li class="nav-item dropdown">
+                  <a href="/paises-actuacion">Países de actuación</a>
+                  <ul class="dropdown-menu">
+                      <li><a href="/iran">Irán</a></li>
+                      <li><a href="/palestina">Palestina</a></li>
+                      <li><a href="/afganistan">Afganistán</a></li>
+                      <li><a href="/senegal">Senegal</a></li>
+                      <li><a href="/tailandia">Tailandia</a></li>
+                      <li><a href="/mexico">Mexico</a></li>
+
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a href="/nuestros-proyectos">Nuestros proyectos</a>
+                  <ul class="dropdown-menu">
+                      <li><a href="cooperacion-internacional">Cooperación internacional</a></li>
+                      <li><a href="/justicia-global">Justicia global</a></li>
+                      <li><a href="/que-ofrecemos">¿Qué ofrecemos?</a></li>
+                      <li><a href="/galeria">Galería</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a href="/noticias-eventos">Noticias y eventos</a>
+                  <ul class="dropdown-menu">
+                      <li><a href="/memoria">Memoria</a></li>
+                      <li><a href="/redes">Redes de Colaboraciónes</a></li>
+                      <li><a href="/boletin">Boletín</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a href="/participa">Participa</a>
+                  <ul class="dropdown-menu">
+                      <li><a href="/asociate">Asociate</a></li>
+                      <li><a href="/donacion">Haz una Donación</a></li>
+                      <li><a href="/unete">Únete al equipo</a></li>
+                      <li><a href="/legado">Legado Solidario</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a href="/galeria">Galería</a>
+              </li>
+              <li class="nav-item">
+                  <a href="/contacto">Contacto</a>
+              </li>
+          </ul>
       </nav>
     </div>
   </header>
   <div class="espacio-navbar"></div>
+</body>
