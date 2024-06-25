@@ -31,12 +31,9 @@
         padding: 0;
 
         img {
-            height: 35px;
-            width: 35px;
-            filter: drop-shadow(1px 1px 3px var(--color-amarillo));
-            background-color: var(--color-amarillo);
+            height: 40px;
+            width: 40px;
             padding: 4px;
-            border-radius: 5px;
         }
     }
 
