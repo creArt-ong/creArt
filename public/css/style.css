@@ -30,7 +30,16 @@ html {
 strong {
   color: var(--color-amarillo);
 }
-.link-fuerte {
+
+strong a {
+  text-decoration: none;
+  color: var(--color-naranja);
+}
+
+strong a:hover{
+  color: var(--color-amarillo);
+  box-shadow: 0 2px 4px var(--color-naranja);
+}.link-fuerte {
   font-size: var(--font-size-medium);
   color: var(--color-naranja);
   font-weight: bolder;
