@@ -1,3 +1,4 @@
+/* --------------- Estilos generales -------------- */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
@@ -27,28 +28,6 @@ html {
   margin: 0 auto;
 }
 
-strong {
-  color: var(--color-amarillo);
-}
-
-strong a {
-  text-decoration: none;
-  color: var(--color-naranja);
-}
-
-strong a:hover{
-  color: var(--color-amarillo);
-  box-shadow: 0 2px 4px var(--color-naranja);
-}
-
-.link-fuerte {
-  font-size: var(--font-size-medium);
-  color: var(--color-naranja);
-  font-weight: bolder;
-}
-
-/* =========================MAIN (PAISES-CARDS Nuestros proyectos)================== */
-
 h2,
 h3,
 blockquote {
@@ -64,6 +43,35 @@ a {
 a:hover {
   color: var(--color-amarillo);
 }
+
+strong {
+  color: var(--color-amarillo);
+
+  a {
+    text-decoration: none;
+    color: var(--color-naranja);
+  }
+
+  a:hover {
+    color: var(--color-amarillo);
+    box-shadow: 0 2px 4px var(--color-naranja);
+  }
+}
+
+
+.link-fuerte {
+  font-size: var(--font-size-medium);
+  color: var(--color-naranja);
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.link-fuerte:hover {
+  color: var(--color-amarillo);
+  text-decoration: underline;
+}
+
+/* =========================MAIN (PAISES-CARDS Nuestros proyectos)================== */
 
 .container-video {
   display: flex;
@@ -93,13 +101,15 @@ video {
   object-fit: cover;
 }
 
-.carousel-caption a {
-  color: white;
-  text-decoration: none;
-}
+.carousel-caption {
+  a {
+    color: white;
+    text-decoration: none;
+  }
 
-.carousel-caption a:hover {
-  color: var(--color-amarillo);
+  a:hover {
+    color: var(--color-amarillo);
+  }
 }
 
 /* =========================MAIN (Nuestros proyectos video youtube resposive)================== */
@@ -110,14 +120,14 @@ video {
   height: 0;
   overflow: hidden;
   margin-bottom: 20px;
-}
 
-.video-container iframe {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 80%;
-  height: 80%;
+  iframe {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+  }
 }
 
 /* -------------------- Estilo para la imagen del mapa ---------------- */
@@ -129,7 +139,7 @@ video {
   margin: 0 auto 20px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
   .img-mapa {
     max-width: 80%;
     width: 800px;
@@ -138,17 +148,17 @@ video {
 
 @media (max-width: 768px) {
   .img-mapa {
-    max-width: 80%;
+    max-width: 75%;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 375px) {
   .img-mapa {
     max-width: 70%;
   }
 }
 
-/* ==============================Main TEXTO PAISES ================== */
+/* ------------ Main TEXTO PAISES ------------- */
 
 .title-primary {
   color: var(--color-naranja);
@@ -210,7 +220,7 @@ video {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 375px) {
   .width-content {
     padding: 5px;
   }
