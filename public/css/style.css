@@ -39,14 +39,15 @@ strong a {
 strong a:hover{
   color: var(--color-amarillo);
   box-shadow: 0 2px 4px var(--color-naranja);
-}.link-fuerte {
+}
+
+.link-fuerte {
   font-size: var(--font-size-medium);
   color: var(--color-naranja);
   font-weight: bolder;
 }
 
 /* =========================MAIN (PAISES-CARDS Nuestros proyectos)================== */
-/* =========================MAIN (INDEX)================== */
 
 h2,
 blockquote {
@@ -86,6 +87,7 @@ video {
   margin: 2rem auto;
 }
 
+/* ------------- Carousel ------------------ */
 .carousel-indicators button {
   background-color: var(--color-naranja) !important;
 }
@@ -109,7 +111,6 @@ video {
 .video-container {
   position: relative;
   padding-bottom: 45%;
-  /* Ajusta la proporción de aspecto según lo necesites */
   height: 0;
   overflow: hidden;
   margin-bottom: 20px;
@@ -118,35 +119,23 @@ video {
 .video-container iframe {
   position: absolute;
   top: 10%;
-  /* Ajusta la posición superior */
   left: 10%;
-  /* Ajusta la posición izquierda */
   width: 80%;
-  /* Reducción del 20% en el ancho */
   height: 80%;
-  /* Reducción del 20% en la altura */
 }
 
-/* =========================MAIN (CARDS mapamundi)================== */
-/* Estilo para la imagen del mapa */
+/* -------------------- Estilo para la imagen del mapa ---------------- */
 .img-mapa {
   width: 80%;
-  /* La imagen del mapa ocupará el 80% del ancho del contenedor */
   max-width: 100%;
-  /* Asegura que la imagen no sea más ancha que su contenedor */
   height: auto;
-  /* Para mantener la proporción */
   display: block;
-  /* Para quitar cualquier espacio adicional */
   margin: 0 auto 20px;
-  /* Centrar la imagen horizontalmente y añadir margen inferior */
 }
 
-/* Media queries para diferentes tamaños de pantalla */
 @media (max-width: 1024px) {
   .img-mapa {
     max-width: 80%;
-    /* Reducir el tamaño máximo de la imagen en pantallas más pequeñas */
     width: 800px;
   }
 }
@@ -154,287 +143,12 @@ video {
 @media (max-width: 768px) {
   .img-mapa {
     max-width: 80%;
-    /* Ajustar aún más el tamaño máximo en pantallas más pequeñas */
   }
 }
 
 @media (max-width: 480px) {
   .img-mapa {
     max-width: 70%;
-    /* Reducir el tamaño máximo en pantallas móviles más pequeñas */
-  }
-}
-
-/* =========================MAIN (PAISES-CARDS)================== */
-
-/* Contendero de las tarjetas individuales */
-.cards-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  padding: 10px;
-}
-
-/* Tarjetas */
-.card {
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: auto;
-  width: 300px;
-  height: auto;
-  transition: box-shadow 0.3s ease;
-  margin-bottom: 20px;
-
-}
-
-.card2, .card3 {
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: auto;
-  width: 500px;
-  transition: box-shadow 0.3s ease;
-  margin: 0 auto;
-}
-
-/* Imagenes de las tarjetas */
-
-.card img {
-  width: 100%;
-  height: 30%;
-  display: block;
-  object-fit: cover;
-}
-
-.card2 img {
-  width: 100%;
-  height: 60%;
-  display: block;
-  object-fit: cover;
-}
-
-.card3 img {
-  width: 300px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 5px;
-}
-
-/* Contenido de las tarjetas */
-
-.card-content {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 75%;
-}
-
-.card2 .card-content {
-  height: 40%;
-  
-}
-
-.card-content h3 {
-  font-size: 1.5rem;
-  /* margin-bottom: 10px; */
-}
-
-.card-content p {
-  font-size: var(--font-size-extra-small);
-  color: #666;
-  /* margin-bottom: 15px; */
-}
-
-/* Media query para pantallas más pequeñas */
-@media (max-width: 768px) {
-  .card2, .card3 {
-    width: 80%;
-  }
-}
-
-/* Media query para pantallas aún más pequeñas */
-@media (max-width: 480px) {
-  .card2, .card3 {
-    width: 90%;
-  }
-}
-
-
-/* Media query para pantallas más pequeñas */
-@media (max-width: 768px) {
-  .card2 img {
-    width: 200px;
-  }
-  .card3 img {
-    width: 300px;
-  }
-}
-
-/* Media query para pantallas aún más pequeñas */
-@media (max-width: 480px) {
-  .card2 img {
-    width: 150px;
-  }
-  .card3 img {
-    width: 250px;
-  }
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px var(--color-naranja);
-  /* Naranja */
-}
-
-.card .btn:hover {
-  background-color: var(--color-naranja);
-  /* Naranja */
-  color: #fff;
-  /* Asegura que el texto siga siendo legible */
-}
-
-.card2:hover {
-  box-shadow: 0 8px 16px var(--color-naranja);
-  /* Naranja */
-}
-
-.card3:hover {
-  box-shadow: 0 8px 16px var(--color-naranja);
-  /* Naranja */
-}
-
-.card2 .btn:hover {
-  background-color: var(--color-naranja);
-  /* Naranja */
-  color: #fff;
-  /* Asegura que el texto siga siendo legible */
-}
-
-.card3 .btn:hover {
-  background-color: var(--color-naranja);
-  /* Naranja */
-  color: #fff;
-  /* Asegura que el texto siga siendo legible */
-}
-
-/* Media Queries para responsividad */
-@media (max-width: 768px) {
-  .card {
-    width: 70%;
-    margin-bottom: 20px;
-  }
-
-  .header img {
-    max-width: 300px;
-    height: auto;
-    margin-bottom: 0;
-    /* Remove bottom margin to align in row */
-  }
-
-  .header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    /* Add space between image and nav */
-  }
-
-  .header .row {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .header .col-12 {
-    display: flex;
-    justify-content: center;
-  }
-
-  .header .col-md-4,
-  .header .col-md-8 {
-    display: flex;
-    justify-content: center;
-    flex: 1;
-    /* Allow flex items to grow */
-  }
-
-  .header nav ul {
-    padding-left: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .header nav ul li {
-    margin: 0 10px;
-    /* Add some spacing between nav items */
-  }
-}
-
-@media (max-width: 480px) {
-  .card-content h3 {
-    width: 70%;
-    font-size: 1.25rem;
-  }
-
-  .card-content p {
-    font-size: var(--font-size-extra-small);
-  }
-
-  .header .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .header .row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .header .col-12 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    /* Allow flex items to grow */
-  }
-
-  .header .col-md-4,
-  .header .col-md-8 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .header nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-left: 0;
-    margin: 0;
-    list-style: none;
-  }
-
-  .header nav ul li {
-    margin: 0 10px;
-    /* Add some spacing between nav items */
-  }
-
-  .header img {
-    max-width: 150px;
-    /* Adjust size for small screens */
-    height: auto;
   }
 }
 
@@ -532,64 +246,27 @@ video {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px; /* Añade espacio entre las columnas */
-  max-width: 1200px; /* Limita el ancho máximo para mejor apariencia */
-  margin: 0 auto; /* Centra el contenedor */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: center;
   align-items: center;
 }
 
 .organizations .paragraph {
-  flex: 1 1 calc(50% - 10px); /* Dos columnas, con espacio entre ellas */
+  flex: 1 1 calc(50% - 10px);
   font-size: var(--font-size-extra-small);
   padding: 10px;
-  border: 1px solid #ddd; /* Añade un borde alrededor de cada elemento */
-  border-radius: 8px; /* Bordes redondeados */
-  background-color: #f9f9f9; /* Fondo ligero para resaltar */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade sombra para profundidad */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
   .organizations .paragraph {
-    flex: 1 1 100%; /* En pantallas más pequeñas, usa una sola columna */
+    flex: 1 1 100%;
   }
-}
-
-/* =================================FORMULARIO ASOCIATE ================== */
-/* Contenedor principal */
-.contenedor-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-}
-
-.form-asociate {
-  display: flex;
-  width: 400px;
-}
-
-.form-texto {
-  width: 400px;
-  line-height: 2;
-}
-
-.input {
-  width: 400px;
-}
-
-.btn:hover {
-  background-color: var(--color-naranja);
-  color: #fff;
-}
-
-.btn {
-  /* margin-top: 20px; */
-  background-color: var(--color-amarillo);
-}
-
-form label {
-  color: var(--color-naranja);
 }
 
 /* =================================UNETE ================== */
