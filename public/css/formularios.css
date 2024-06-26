@@ -1,0 +1,33 @@
+.contenedor-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .form-asociate {
+    display: flex;
+    width: 400px;
+  }
+  
+  .form-texto {
+    width: 400px;
+    line-height: 2;
+  }
+  
+  .input {
+    width: 400px;
+  }
+  
+  .btn:hover {
+    background-color: var(--color-naranja);
+    color: #fff;
+  }
+  
+  .btn {
+    background-color: var(--color-amarillo);
+  }
+  
+  form label {
+    color: var(--color-naranja);
+  }

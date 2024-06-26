@@ -12,8 +12,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 15px;
-    }
+        padding-top: 10px;    }
 
     .logo-footer {
         width: 130px;
@@ -53,5 +52,122 @@
         scale: 1.1;
         color: var(--color-amarillo);
         text-decoration: underline;
+    }
+}
+
+
+/* =====================MEDIA QUERY 375PX============================== */
+@media (max-width: 375px) {
+    .footer {
+        margin-top: 10px;
+        font-size: var(--font-size-extra-small);
+        
+        div {
+            align-items: center;
+            gap: 5px;
+            height: 30px;
+            padding-top: 0px;
+        }
+    
+        .logo-footer {
+            width: 40px;
+        }
+    
+        .redes-sociales {
+            display: flex;
+            justify-content: center;
+            width: 20%;
+            padding: 0;
+
+            img {
+                height: 20px;
+                width: 20px;
+                gap: 5px;
+            }
+        }
+        .decorador-footer {
+            font-size: var(--font-size-extra-small);
+        }
+        a {
+            font-size: 0.5rem;
+        }
+        a:hover {
+            scale: 1.1;
+            color: var(--color-amarillo);
+            text-decoration: underline;
+        }
+        .copyright {
+            font-size: 0.5rem;
+        }
+    }
+}
+
+
+@media (min-width: 375px) and (max-width: 767px) {
+    .footer {
+    
+        div {
+            align-items: center;
+            height: 30px;
+            padding-top: 0px;
+        }
+
+        .logo-footer {
+            width: 50px; 
+        }
+
+        .redes-sociales {
+            display: flex;
+            justify-content: center;
+
+            img {
+                height: 25px; 
+                width: 25px;
+            }
+        }
+
+        a {
+            font-size: 0.5rem; 
+        }
+        a:hover {
+            scale: 1.1;
+            color: var(--color-amarillo);
+            text-decoration: underline;
+        }
+        .copyright {
+            font-size: 0.5rem;
+        }
+    }
+}
+
+
+/* =====================MEDIA QUERY 768PX============================== */
+@media (min-width: 768px) and (max-width: 1100px) {
+    .footer {  
+        div {
+            padding-top: 5px;
+        }      
+        .logo-footer {
+            width: 80px;
+        }
+
+        .redes-sociales {
+            display: flex;
+            justify-content: center;
+
+            img {
+                height: 30px; 
+                width: 30px;
+                gap: 10px; 
+            }
+        }
+
+        a {
+            font-size: var(--font-size-extra-small); 
+        }
+
+        .copyright {
+            font-size: 0.8rem;
+        }
     }
 }
