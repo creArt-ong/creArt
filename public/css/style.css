@@ -50,12 +50,9 @@ strong a:hover{
 /* =========================MAIN (PAISES-CARDS Nuestros proyectos)================== */
 
 h2,
+h3,
 blockquote {
   text-align: center;
-  color: var(--color-naranja);
-}
-
-h3 {
   color: var(--color-naranja);
 }
 
@@ -66,7 +63,6 @@ a {
 
 a:hover {
   color: var(--color-amarillo);
-  font-weight: bold;
 }
 
 .container-video {
