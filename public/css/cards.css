@@ -17,7 +17,6 @@
     height: auto;
     transition: box-shadow 0.3s ease;
     margin-bottom: 20px;
-
 }
 
 .card2,
@@ -25,7 +24,7 @@
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    overflow: auto;
+    overflow: hidden;
     width: 500px;
     transition: box-shadow 0.3s ease;
     margin: 0 auto;
@@ -115,54 +114,4 @@
 .card3 .btn:hover {
     background-color: var(--color-naranja);
     color: #fff;
-}
-
-/* --------------------- medias de las card ---------------------- */
-
-@media (max-width: 768px) {
-
-    .card {
-        width: 70%;
-        margin-bottom: 20px;
-    }
-
-    .card2,
-    .card3 {
-        width: 80%;
-    }
-
-    .card2 img {
-        width: 200px;
-    }
-
-    .card3 img {
-        width: 300px;
-    }
-
-}
-
-@media (max-width: 480px) {
-
-    .card-content h3 {
-        width: 70%;
-        font-size: 1.25rem;
-    }
-
-    .card-content p {
-        font-size: var(--font-size-extra-small);
-    }
-
-    .card2,
-    .card3 {
-        width: 90%;
-    }
-
-    .card2 img {
-        width: 150px;
-    }
-
-    .card3 img {
-        width: 250px;
-    }
-
 }

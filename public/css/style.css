@@ -35,12 +35,14 @@ blockquote {
   color: var(--color-naranja);
 }
 
-a {
+a,
+p a {
   color: var(--color-naranja);
   font-weight: bold;
 }
 
-a:hover {
+a:hover,
+p a:hover {
   color: var(--color-amarillo);
 }
 
@@ -273,17 +275,4 @@ video {
   .organizations .paragraph {
     flex: 1 1 100%;
   }
-}
-
-/* =================================UNETE ================== */
-
-.unete-texto {
-  width: 800px;
-  line-height: 2;
-}
-
-.texto-legado {
-  font-size: 24px;
-  width: 800px;
-  line-height: 2;
 }

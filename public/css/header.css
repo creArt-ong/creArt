@@ -20,7 +20,7 @@ header {
 
 /* Espacio para que el navbar no tape elementos */
 .espacio-navbar {
-    padding-top: 140px;
+    padding-top: 110px;
     margin: 20px;
 }
 
@@ -96,11 +96,13 @@ nav li:last-child {
     color: var(--color-naranja);
 }
 
-/* =====================MEDIA QUERY 375PX============================== */
+/* Mostrar el menú desplegable al hacer hover */
+nav li:hover .dropdown-menu {
+    display: block;
+}
 
-
-/* Menús desplegables en pantallas pequeñas */
-@media (max-width: 375px){
+/* =====================MEDIA QUERY PARA SMARTPHONES COMPACTOS (Menos de 375px)============================== */
+@media (max-width: 374px) {
     .header {
         padding: 10px;
         flex-direction: row;
@@ -131,6 +133,7 @@ nav li:last-child {
         margin: 0;
         list-style: none;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        line-height: 0.4;
     }
 
     nav ul.show {
@@ -168,7 +171,7 @@ nav li:last-child {
         transition: 0.4s;
     }
     .dropdown-menu li a {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
         border-bottom: solid 1px var(--color-naranja);
     }
     .dropdown-menu li {
@@ -177,77 +180,127 @@ nav li:last-child {
 }
 
 
-/* =====================MEDIA QUERY 376PX HASTA 768PX============================== */
-
-
-@media (min-width: 375px) and (max-width: 550px) {
+/* =====================MEDIA QUERY PARA SMARTPHONES ESTÁNDAR (375px a 550px)============================== */
+@media (min-width: 374px) and (max-width: 550px) {
     .header {
+        padding: 10px;
+        flex-direction: row;
+        align-items: center;
         justify-content: center;
-        gap: 5px;
     }
-    nav li {
+
+    .header img {
+        max-width: 200px;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+        border-bottom: solid 1px var(--color-naranja);
+    }
+
+    nav ul {
+        display: none; /* Ocultar el menú por defecto */
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background-color: white;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
         padding: 0;
-    }
-    nav ul {
-        gap: 5px;
+        margin: 0;
+        list-style: none;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        line-height: 0.6;
+
     }
 
-    nav a {
-        font-size: 0.5rem;
-    }
-    .header img {
-        width: 60px;
-    }
-    nav {
-        line-height: 0.7;
+    nav li {
+        width: 100%;
+        text-align: center;
+        border: none;
+        position: relative; /* Añadido para manejar el hover en elementos hijos */
     }
 
+    nav li:hover .dropdown-menu {
+        display: block; /* Mostrar el menú desplegable al hacer hover */
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    /* Estilo para el icono del menú hamburguesa */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-toggle div {
+        width: 30px;
+        height: 3px;
+        background-color: #000;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+
+    .dropdown-menu li a {
+        font-size: 0.7rem;
+        border-bottom: solid 1px var(--color-naranja);
+    }
+
+    .dropdown-menu li {
+        line-height: 0.2;
+    }
 }
 
-
+/* =====================MEDIA QUERY PARA PHABLETS Y SMARTPHONES GRANDES (550px a 768px)============================== */
 @media (min-width: 550px) and (max-width: 768px) {
-
     .header {
         justify-content: center;
         gap: 10px;
     }
 
+    nav ul {
+        gap: 5px;
+        line-height: 0.8;
+    }
+
+    nav a {
+        font-size: 0.7rem;
+
+    }
+
+    .header img {
+        max-width: 100px;
+    }
+
+    .dropdown-menu li a {
+        font-size: 0.6rem;
+        border-bottom: solid 1px var(--color-naranja);
+    }
+    .dropdown-menu li {
+        line-height: 0.2;
+    }
+}
+
+/* =====================MEDIA QUERY PARA TABLETS PEQUEÑAS O GRANDES PHABLETS (Más de 768px)============================== */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .header {
+        justify-content: center;
+        gap: 10px;
+    }
 
     nav ul {
         gap: 5px;
     }
 
     nav a {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
+
     .header img {
         max-width: 100px;
     }
 }
-
-
-/* =====================MEDIA QUERY 768PX HASTA 1100PX============================== */
-
-@media (min-width: 769px) and (max-width: 1100px) {
-    .header {
-        justify-content: center;
-        gap: 10px;
-    }
-
-
-    nav ul {
-        gap: 5px;
-    }
-
-    nav a {
-        font-size: 0.8rem;
-    }
-    .header img {
-        max-width: 100px;
-    }
-
-}
-
-
-
-
