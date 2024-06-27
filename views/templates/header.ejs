@@ -49,7 +49,7 @@
     <header>
       <div class="header width-content">
         <a href="/"><img src="img/logo_creart/logo creart_trasparente.png" alt="Logo" /></a>
-        <div class="menu-toggle" onclick="toggleMenu()">
+        <div class="menu-toggle" onclick="toggleMenu()" id="main-menu">
           <div></div>
           <div></div>
           <div></div>
@@ -104,11 +104,7 @@
       </div>
     </header>
     <div class="espacio-navbar"></div>
-    <script>
-      function toggleMenu() {
-        const nav = document.querySelector("nav ul");
-        nav.classList.toggle("show");
-      }
-    </script>
+    <script src="js/header.js"></script>
+
   </body>
 </html>
