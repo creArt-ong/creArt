@@ -1,0 +1,306 @@
+/* Estilo general para el header */
+header {
+    box-shadow: 1px 1px 4px var(--color-naranja);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 8px 0;
+    background-color: white;
+    z-index: 1000;
+}
+
+/* Clase header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 50px;
+}
+
+/* Espacio para que el navbar no tape elementos */
+.espacio-navbar {
+    padding-top: 110px;
+    margin: 20px;
+}
+
+/* Estilo para el logo */
+.header img {
+    max-width: 200px;
+}
+
+/* Eliminar viñetas y márgenes por defecto */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para los enlaces */
+nav a,
+nav label {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: var(--font-size-small);
+    text-align: center;
+}
+
+nav a:hover,
+nav label:hover {
+    text-decoration: underline !important;
+    color: var(--color-naranja) !important;
+}
+
+nav li {
+    position: relative;
+    /* Añadido para posicionar los menús desplegables */
+    border-right: 2px solid var(--color-naranja);
+    padding: 5px 10px;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+/* Estilo para el menú desplegable */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 0;
+    min-width: 200px;
+    /* Añadido para establecer un ancho mínimo */
+}
+
+.dropdown-menu li {
+    border: none;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: normal;
+    font-size: var(--font-size-extra-small);
+}
+
+.dropdown-menu li a:hover {
+    color: var(--color-naranja);
+}
+
+/* Mostrar el menú desplegable al hacer hover */
+nav li:hover .dropdown-menu {
+    display: block;
+}
+
+/* =====================MEDIA QUERY PARA SMARTPHONES COMPACTOS (Menos de 375px)============================== */
+@media (max-width: 374px) {
+    .header {
+        padding: 10px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header img {
+        max-width: 150px;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+        border-bottom: solid 1px var(--color-naranja);
+        }
+
+    nav ul {
+        display: none; /* Ocultar el menú por defecto */
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background-color: white;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        line-height: 0.4;
+    }
+
+    nav ul.show {
+        display: flex; /* Mostrar el menú al activar el botón hamburguesa */
+        line-height: 0.4;
+    }
+
+    nav li {
+        width: 100%;
+        text-align: center;
+        border: none;
+        position: relative; /* Añadido para manejar el hover en elementos hijos */
+    }
+
+    nav li:hover .dropdown-menu {
+        display: block; /* Mostrar el menú desplegable al hacer hover */
+    }
+
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    /* Estilo para el icono del menú hamburguesa */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-toggle div {
+        width: 30px;
+        height: 3px;
+        background-color: #000;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+    .dropdown-menu li a {
+        font-size: 0.6rem;
+        border-bottom: solid 1px var(--color-naranja);
+    }
+    .dropdown-menu li {
+        line-height: 0.2;
+    }
+}
+
+
+/* =====================MEDIA QUERY PARA SMARTPHONES ESTÁNDAR (375px a 550px)============================== */
+@media (min-width: 374px) and (max-width: 550px) {
+    .header {
+        padding: 10px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header img {
+        max-width: 200px;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+        border-bottom: solid 1px var(--color-naranja);
+    }
+
+    nav ul {
+        display: none; /* Ocultar el menú por defecto */
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background-color: white;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        line-height: 0.6;
+
+    }
+
+    nav li {
+        width: 100%;
+        text-align: center;
+        border: none;
+        position: relative; /* Añadido para manejar el hover en elementos hijos */
+    }
+
+    nav li:hover .dropdown-menu {
+        display: block; /* Mostrar el menú desplegable al hacer hover */
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    /* Estilo para el icono del menú hamburguesa */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-toggle div {
+        width: 30px;
+        height: 3px;
+        background-color: #000;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+
+    .dropdown-menu li a {
+        font-size: 0.7rem;
+        border-bottom: solid 1px var(--color-naranja);
+    }
+
+    .dropdown-menu li {
+        line-height: 0.2;
+    }
+}
+
+/* =====================MEDIA QUERY PARA PHABLETS Y SMARTPHONES GRANDES (550px a 768px)============================== */
+@media (min-width: 550px) and (max-width: 768px) {
+    .header {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav ul {
+        gap: 5px;
+        line-height: 0.8;
+    }
+
+    nav a {
+        font-size: 0.7rem;
+
+    }
+
+    .header img {
+        max-width: 100px;
+    }
+
+    .dropdown-menu li a {
+        font-size: 0.6rem;
+        border-bottom: solid 1px var(--color-naranja);
+    }
+    .dropdown-menu li {
+        line-height: 0.2;
+    }
+}
+
+/* =====================MEDIA QUERY PARA TABLETS PEQUEÑAS O GRANDES PHABLETS (Más de 768px)============================== */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .header {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .header img {
+        max-width: 100px;
+    }
+}
