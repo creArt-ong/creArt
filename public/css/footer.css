@@ -64,13 +64,12 @@
         
         div {
             align-items: center;
-            gap: 5px;
             height: 30px;
             padding-top: 0px;
         }
     
         .logo-footer {
-            width: 40px;
+            width: 20px;
         }
     
         .redes-sociales {
@@ -80,9 +79,8 @@
             padding: 0;
 
             img {
-                height: 20px;
-                width: 20px;
-                gap: 5px;
+                height: 15px;
+                width: 15px;
             }
         }
         .decorador-footer {
@@ -90,6 +88,7 @@
         }
         a {
             font-size: 0.5rem;
+            text-align: center;
         }
         a:hover {
             scale: 1.1;
@@ -99,6 +98,7 @@
         .copyright {
             font-size: 0.5rem;
         }
+
     }
 }
 
@@ -118,11 +118,11 @@
 
         .redes-sociales {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
 
             img {
-                height: 25px; 
-                width: 25px;
+                height: 20px; 
+                width: 20px;
             }
         }
 
